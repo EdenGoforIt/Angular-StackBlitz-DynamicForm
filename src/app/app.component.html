@@ -1,3 +1,10 @@
 <div class="container">
   <h1 class="text-center">Dynamic Form</h1>
+  <form
+    name="dynamicForm"
+    #ngForm="ngForm"
+    (ngSubmit)="ngForm.valid && onSubmit()"
+  >
+    <app-dynamic-form></app-dynamic-form>
+  </form>
 </div>
