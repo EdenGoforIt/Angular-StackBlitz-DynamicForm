@@ -9,6 +9,7 @@ export class Field<T> {
   placeHolder?: string;
   required: boolean = false;
   disabled: boolean = false;
+  priority?: number;
   value: T;
 
   constructor(data?: Partial<Field<any>>) {
@@ -18,6 +19,6 @@ export class Field<T> {
     this.parentClass = data?.parentClass;
     this.placeHolder = data?.placeHolder;
     this.required = data?.required;
-    this.required = data?.required;
+    this.priority = data?.priority;
   }
 }
