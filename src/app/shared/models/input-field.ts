@@ -1,7 +1,7 @@
 import { Field } from './field';
 
 export class InputField extends Field<string> {
-  fieldType = 'input';
+  override fieldType = 'input';
   type: string = 'text';
   maxlength?: number = 100;
 
