@@ -12,8 +12,8 @@ export class AppComponent {
     firstName: string;
     lastName: string;
   } = {
-    firstName: 'Faker',
-    lastName: 'Awesome',
+    firstName: 'aaaa',
+    lastName: 'bbbbb',
   };
 
   fields: Field<any>[] = [
