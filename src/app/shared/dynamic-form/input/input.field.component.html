@@ -1,7 +1,11 @@
-<mat-form-field class="example-form-field" appearance="fill">
-  <mat-label>{{ field.labelText }}</mat-label>
-  <input matInput type="text" [(ngModel)]="value" />
-  <button matSuffix mat-icon-button aria-label="Clear">
-    <mat-icon>close</mat-icon>
-  </button>
+<mat-form-field appearance="fill">
+  <mat-label>{{ field?.label }}</mat-label>
+  <input
+    matInput
+    name="field.name"
+    [(ngModel)]="value"
+    type="text"
+    placeholder="field.placeHolder"
+  />
+  <mat-hint>Hint</mat-hint>
 </mat-form-field>

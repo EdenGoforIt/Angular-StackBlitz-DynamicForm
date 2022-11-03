@@ -5,6 +5,7 @@
     #ngForm="ngForm"
     (ngSubmit)="ngForm.valid && onSubmit()"
   >
-    <app-dynamic-form></app-dynamic-form>
+    <app-dynamic-form [fields]="fields" [data]="data"></app-dynamic-form>
+    <button mat-button color="primary">Primary</button>
   </form>
 </div>

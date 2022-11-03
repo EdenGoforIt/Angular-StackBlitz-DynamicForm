@@ -1,6 +1,6 @@
 import { Field } from './field';
 
-export class InputField extends Field {
+export class InputField extends Field<string> {
   fieldType = 'input';
   type = 'text';
   maxlength?: number = 100;

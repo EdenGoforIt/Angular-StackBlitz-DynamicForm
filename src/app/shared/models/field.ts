@@ -11,6 +11,7 @@ export class Field<T> {
   disabled: boolean = false;
   priority?: number;
   value: T;
+  label: string;
 
   constructor(data?: Partial<Field<any>>) {
     this.name = data?.name;
@@ -20,5 +21,6 @@ export class Field<T> {
     this.placeHolder = data?.placeHolder;
     this.required = data?.required;
     this.priority = data?.priority;
+    this.label = data?.label;
   }
 }

@@ -1,2 +1,12 @@
-<h1>Dynamic Form</h1>
-<div *ngFor="let field of fields | sort: 'priority'"></div>
+<div *ngFor="let field of fields">
+  <ng-container [ngSwitch]="field.fieldType">
+    <ng-container *ngSwitchCase="'input'">
+      <app-input-field
+        [field]="field"
+        [(value)]="data[field.name]"
+        (clear)="clear(field)"
+        (valueChange)="valueChange(field, $event)"
+      ></app-input-field>
+    </ng-container>
+  </ng-container>
+</div>
