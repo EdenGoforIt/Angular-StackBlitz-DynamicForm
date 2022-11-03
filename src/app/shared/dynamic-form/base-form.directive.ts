@@ -5,9 +5,20 @@ import { Field } from '../models/field';
 })
 export class BaseFormDirective {
   @Input() field: Field<any>;
+
+  /**
+   * value to be used for two-way binding
+   */
   @Input() value: any;
 
+  /**
+   * clear event
+   */
   @Output() clear = new EventEmitter<any>();
+
+  /**
+   * value change event
+   */
   @Output() valueChange = new EventEmitter<any>();
 
   get val(): any {
