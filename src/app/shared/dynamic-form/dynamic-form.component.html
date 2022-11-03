@@ -1,4 +1,4 @@
-<div *ngFor="let field of fields">
+<div *ngFor="let field of fields | sort: 'priority'">
   <ng-container [ngSwitch]="field.fieldType">
     <ng-container *ngSwitchCase="'input'">
       <app-input-field

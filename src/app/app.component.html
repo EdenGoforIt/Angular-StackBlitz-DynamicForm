@@ -3,9 +3,10 @@
   <form
     name="dynamicForm"
     #ngForm="ngForm"
-    (ngSubmit)="ngForm.valid && onSubmit()"
+    (ngSubmit)="ngForm.valid && onSubmit($event)"
   >
     <app-dynamic-form [fields]="fields" [data]="data"></app-dynamic-form>
-    <button class="btn btn-primary mt-2">Primary</button>
+    <button class="btn btn-primary mt-2">Submit</button>
+    <pre>{{ data | json }}</pre>
   </form>
 </div>

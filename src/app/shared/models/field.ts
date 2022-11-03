@@ -12,6 +12,7 @@ export class Field<T> {
   priority?: number;
   value: T;
   label: string;
+  type: string;
 
   constructor(data?: Partial<Field<any>>) {
     this.name = data?.name;
@@ -22,5 +23,6 @@ export class Field<T> {
     this.required = data?.required;
     this.priority = data?.priority;
     this.label = data?.label;
+    this.type = data?.type;
   }
 }

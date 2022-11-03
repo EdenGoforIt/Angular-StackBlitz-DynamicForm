@@ -1,11 +1,10 @@
 <label for="field.name">{{ field?.label }}</label>
-{{ val }}
 <input
   class="form-control"
-  name="field.name"
+  [name]="field.name"
   [(ngModel)]="val"
   [disabled]="field.disabled"
   [required]="field.required"
-  type="text"
+  [type]="field.type"
   placeholder="field.placeHolder"
 />
