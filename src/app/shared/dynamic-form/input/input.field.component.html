@@ -1,11 +1,8 @@
-<mat-form-field appearance="fill">
-  <mat-label>{{ field?.label }}</mat-label>
-  <input
-    matInput
-    name="field.name"
-    [(ngModel)]="value"
-    type="text"
-    placeholder="field.placeHolder"
-  />
-  <mat-hint>Hint</mat-hint>
-</mat-form-field>
+<label for="field.name">{{ field?.label }}</label>
+<input
+  class="form-control"
+  name="field.name"
+  [(ngModel)]="value"
+  type="text"
+  placeholder="field.placeHolder"
+/>

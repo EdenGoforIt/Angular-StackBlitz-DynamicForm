@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     FormsModule,
     DynamicFormModule,
-    MatButtonModule,
+    DynamicFormModule,
   ],
   declarations: [AppComponent, HelloComponent, DynamicFormComponent],
   bootstrap: [AppComponent],
